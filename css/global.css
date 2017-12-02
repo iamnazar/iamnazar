@@ -6,8 +6,9 @@ img {
 }
 
 .header-top { background: #f2f6f5; height: 40px;}
-.header-top ul {display: inline; width: 190px;}
+.header-top ul {display: inline;}
 .header-top ul li { display: inline-block; list-style: none; margin: 0 10px;}
+.header-top ul.social-icons { width: 190px;}
 .header-top ul.social-icons li a { color: #222; font-size: 1.7rem; padding: 10px; display: inline-block;}
 .header-top ul.social-icons li a:hover { color: #2e6da4;}
 .header-top ul.top-links { padding: 10px; }
@@ -46,6 +47,9 @@ img {
     border-color: #f6a1b5;
 }
 
+.carousel .carousel-control {
+    background: none;
+}
 
 @media (max-width:768px) {
     .header-top ul.top-links, .header-top ul.social-icons { display: none }
