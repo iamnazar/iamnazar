@@ -20,6 +20,7 @@ img {
 
 body {
     font-family: 'Avenir';
+    overflow-x: hidden;
 }
 .cta-primary {
     background: #f5e3e7;
@@ -146,6 +147,18 @@ ul.navbar-nav a:hover {
     list-style: none;
     margin: 0px 20px 0 0;}
 .featured-image {}
+
+.services-component .heading-wrap {
+    border-bottom: 1px solid #a7a7a7;
+    margin: 20px 0;
+}
+.services-component .heading {
+    border: 1px solid #a7a7a7;
+    padding: 10px 50px;
+    display: inline-block;
+    position: relative;
+    top: 1px;
+}
 @media (max-width: 768px) {
 
 }
