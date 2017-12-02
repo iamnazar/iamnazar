@@ -1,10 +1,55 @@
+/************************* GLOBAL STYLES *************************/
+*{
+    transition: all 1s;
+}
 ul { margin: 0; padding: 0;}
 a { color: #222;}
-a:hover { color: #4cae4c; text-decoration: none;}
+a:hover { color: #f6a1b5; text-decoration: none;}
 img {
     width: 100%;
 }
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/custom/Avenir-Medium.eot');
+    src: url('../fonts/custom/Avenir-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/custom/Avenir-Medium.woff') format('woff'),
+    url('../fonts/custom/Avenir-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
 
+body {
+    font-family: 'Avenir';
+}
+.cta-primary {
+    background: #f5e3e7;
+    border-radius: 2px;
+    color: #444;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    margin: 10px 0;
+}
+.cta-primary:hover {
+    background: #f6a1b5;
+    color: #fff;
+}
+.cta-transparent {
+    padding: 10px 20px 10px 0;
+    border-right: 2px solid #000;
+    text-transform: uppercase;
+    margin: 10px 0;
+    display: inline-block;
+}
+.cta-transparent:hover {
+    border-right: 2px solid #f6a1b5;
+}
+
+main section { margin: 20px 0; clear: both}
+main section .row { padding: 20px; box-sizing: border-box;}
+/*main section:hover .row{ box-shadow: 0px 0px 5px #888;}*/
+
+/********************HEADER STYLE********************/
 .header-top { background: #f2f6f5; height: 40px;}
 .header-top ul {display: inline;}
 .header-top ul li { display: inline-block; list-style: none; margin: 0 10px;}
@@ -13,7 +58,7 @@ img {
 .header-top ul.social-icons li a:hover { color: #2e6da4;}
 .header-top ul.top-links { padding: 10px; }
 
-.logo_container {  position: relative; top: -40px; margin-bottom: -90px;}
+.logo_container {  position: relative; top: -40px; margin-bottom: -90px; width: 250px;}
 .logo_wrap { position: relative;}
 
 .logo_wrap img { max-width: 193px;}
@@ -38,25 +83,99 @@ img {
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-    color: #222;
     background: none;
 }
 
+.navbar-default .navbar-nav>li>a {
+    color: #222;
+    font-size: 1.4rem;
+}
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
     background: #f6a1b5;
     border-color: #f6a1b5;
 }
-
+ul.navbar-nav a:hover {
+    color: #f6a1b5 !important;
+}
 .carousel .carousel-control {
     background: none;
+    opacity: .0;
+}
+.carousel:hover .carousel-control {
+    opacity: .5;
+}
+.about-component-wrapper {
+    margin: 60px 0;
+}
+
+.about-component-wrapper .about-component {
+    background: #f8edef;
+}
+.about-component-wrapper .about-component:hover {
+    background: #f7dce1;
+}
+
+.about-component-wrapper .about-component .image-wrapper {
+    width: 35%;
+}
+
+.about-component-wrapper .about-component .description-wrapper {
+    padding: 45px;
+    width: 65%;
+}
+
+.about-component-wrapper .about-component .description-wrapper h1.heading-1 {
+    text-transform: uppercase;
+}
+
+.about-component-wrapper .about-component .description-wrapper p {
+    margin: 20px 0 20px;
+}
+
+
+
+/*Makeovers Thumbnail Component*/
+.thumbnails {
+    display: inline-block;
+    width: 100%;
+    margin: 0 0 10px 0;
+}
+.thumbnails li {
+    width: auto;
+    float: left;
+    list-style: none;
+    margin: 0px 20px 0 0;}
+.featured-image {}
+@media (max-width: 768px) {
+
 }
 
 @media (max-width:768px) {
     .header-top ul.top-links, .header-top ul.social-icons { display: none }
+    .about-component-wrapper .about-component .image-wrapper,
+    .about-component-wrapper .about-component .description-wrapper { width: 100%;}
+    .about-component-wrapper .about-component, section { padding: 0 0 20px 0;}
+    .carousel .carousel-control { display: none; }
 }
 
+/*@media (min-width:1024px) {*/
+    /*.image-wrapper { padding-right: 0}*/
+    /*.description-wrapper { padding-left: 0}*/
+/*}*/
+
 @media (max-width:1024px) {
-    .navbar-default {
-        margin-top: 50px;
+    .navbar-default { margin-top: 50px; }
+    .about-component-wrapper .about-component .description-wrapper {padding: 10px 30px;}
+}
+
+@media (min-width:1440px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (min-width:2560px) {
+    .container {
+        width: 95%;
     }
 }
