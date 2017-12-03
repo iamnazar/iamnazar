@@ -1,6 +1,8 @@
 'use strict'
 
 $(document).ready(function () {
+    featuredThumb();
+    
     new WOW().init();
 
     $('.owl-carousel').owlCarousel({
@@ -24,3 +26,13 @@ $(document).ready(function () {
         }
     });
 });
+
+function featuredThumb() {
+    $(document).on('click', '.featured-desc .thumbnails a', function(e) {
+        e.preventDefault();
+        var datahref = $(this).attr("data-href");
+        if(datahref != ""){
+            $(this).closest('.featured-desc').next('.featured-image').find('.image-wrapper').attr('src', datahref);
+        }
+    });
+}
