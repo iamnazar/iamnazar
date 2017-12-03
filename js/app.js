@@ -10,6 +10,7 @@ $(document).ready(function () {
         animateIn:true,
         animateOut:true,
         nav:true,
+        dots: false,
         responsive:{
             0:{
                 items:1
