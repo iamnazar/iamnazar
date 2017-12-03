@@ -6,7 +6,7 @@ $(document).ready(function () {
     new WOW().init();
 
     $('.owl-carousel').owlCarousel({
-        stagePadding: 50,
+        stagePadding: 0,
         loop:true,
         margin:20,
         animateIn:true,
