@@ -159,8 +159,76 @@ ul.navbar-nav a:hover {
     position: relative;
     top: 1px;
 }
-@media (max-width: 768px) {
 
+/*Footer CSS starts here*/
+.footer-component { 
+    background: #322f31;
+    overflow: auto;
+}
+.footer-component a, .footer-component{ color: #fff }
+.footer-component .row-first {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+}
+.footer-component .footer-logo img {
+    max-width: 230px;
+}
+.footer-component .footer-social {
+    margin: 50px 0 0 0;
+    display: inline-block;
+    float: right;
+}
+.footer-component .footer-social li {
+    display: inline;
+    margin: 0px 10px;
+}
+.footer-component .footer-social li a, .footer-component .footer-social li .fa {
+    color: #fff;
+    font-size: 2rem;
+}
+.row-second .quick-links { margin: 30px 0; }
+.row-second .quick-links li { 
+    display: inline-block;
+    margin: 10px 0px;
+    width: 25%; }
+.row-second .quick-links li a { color: #fff; }
+.row-second .quick-links li a:hover { color: #f0d1cf; text-decoration: underline;}
+.footer-component .email-field { float: right; }
+.footer-component .email-field input{ height: 30px; margin: 5px 0; text-indent: 5px; color: #888;}
+.footer-component .email-label {
+    margin: 40px 0 0;
+    font-size: 1.2rem;
+    display: block;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+.row-third {
+    margin: 0px 0 20px 0;
+}
+.footer-component .email-field .button {
+    padding: 9px;
+    background: #f0d1cf;
+    color: #364245;
+    position: relative;
+    right: 5px;
+    top: 0px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.copyright { font-size: 0.9em; }
+.termscondition { float: right; }
+
+
+
+
+
+
+/*Responsive behaviour handling*/
+@media (max-width: 425px) {
+    
+    .footer-component .email-field input { width: 86%; }
+    .row-second .quick-links li { width: 100%; }
+    .footer-logo, .footer-component .footer-social{ display: block; text-align: center; float: none; }
 }
 
 @media (max-width:768px) {
@@ -173,13 +241,9 @@ ul.navbar-nav a:hover {
         padding: 0;
     }
     .carousel .carousel-control { display: none; }
+    .row-third, .termscondition{ text-align: center; float: none; margin: 10px 0; }
+    .footer-component .email-field { float: none }
 }
-
-/*@media (min-width:1024px) {*/
-    /*.image-wrapper { padding-right: 0}*/
-    /*.description-wrapper { padding-left: 0}*/
-/*}*/
-
 @media (max-width:1024px) {
     .navbar-default { margin-top: 50px; }
     .about-component-wrapper .about-component .description-wrapper {padding: 10px 30px;}
