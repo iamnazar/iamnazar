@@ -188,7 +188,7 @@
   content: "\e070";
 }
 .lg-toolbar .lg-download:after {
-  content: "\e0f2";
+  /*content: "\e0f2";*/
 }
 
 .lg-sub-html {
@@ -241,7 +241,7 @@
   transform: translate3d(10px, 0, 0);
 }
 .lg-hide-items .lg-toolbar {
-  opacity: 0;
+  opacity: 0.4;
   -webkit-transform: translate3d(0, -10px, 0);
   transform: translate3d(0, -10px, 0);
 }
