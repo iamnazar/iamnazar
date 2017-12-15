@@ -258,6 +258,8 @@ ul.navbar-nav a:hover {
     .carousel .carousel-control { display: none; }
     .row-third, .termscondition{ text-align: center; float: none; margin: 10px 0; }
     .footer-component .email-field { float: none }
+    .lg-toolbar { margin: 30px 0 0; }
+    .lg-toolbar .lg-icon { color: #fff; }
 }
 @media (max-width:1024px) {
     .navbar-default { margin-top: 50px; }
