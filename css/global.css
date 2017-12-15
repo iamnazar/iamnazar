@@ -1,7 +1,7 @@
 /************************* GLOBAL STYLES *************************/
-*{
+/**{
     transition: all 1s;
-}
+}*/
 ul { margin: 0; padding: 0;}
 a { color: #222;}
 a:hover { color: #f6a1b5; text-decoration: none;}
@@ -47,7 +47,7 @@ body {
 }
 
 main section { margin: 20px 0; clear: both}
-main section .row { padding: 20px; box-sizing: border-box;}
+main section .row { padding: 20px 0; box-sizing: border-box;}
 /*main section:hover .row{ box-shadow: 0px 0px 5px #888;}*/
 
 /********************HEADER STYLE********************/
@@ -68,6 +68,7 @@ main section .row { padding: 20px; box-sizing: border-box;}
     background: none;
     border: none;
     margin-top: 13px;
+    box-shadow: 0px 3px 10px #d8d8d8;
 }
 
 .navbar-default a {
@@ -217,6 +218,20 @@ ul.navbar-nav a:hover {
 }
 .copyright { font-size: 0.9em; }
 .termscondition { float: right; }
+
+.page-heading {
+    text-transform: uppercase;
+    color: #444;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+    padding: 20px 0 30px;
+    border-bottom: 1px solid #ccc;
+}
+.gallery-wrap ul li {
+    margin: 0 0 35px;
+}
+
 
 
 
