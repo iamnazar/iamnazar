@@ -11,7 +11,9 @@ $(document).ready(function () {
         margin:20,
         animateIn:true,
         animateOut:true,
+        lazyLoad: true,
         nav:true,
+        navText: ["<span class='glyphicon glyphicon-chevron-left'></span>","<span class='glyphicon glyphicon-chevron-right'></span>"],
         dots: false,
         responsive:{
             0:{

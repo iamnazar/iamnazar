@@ -8,6 +8,7 @@ a:hover { color: #f6a2b6; text-decoration: none;}
 img {
     width: 100%;
 }
+
 @font-face {
     font-family: 'Avenir';
     src: url('../fonts/custom/Avenir-Medium.eot');
@@ -15,6 +16,18 @@ img {
     url('../fonts/custom/Avenir-Medium.woff') format('woff'),
     url('../fonts/custom/Avenir-Medium.ttf') format('truetype');
     font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir-Black';
+    src: url('../fonts/custom/Avenir-Black.eot');
+    src: url('../fonts/custom/Avenir-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/custom/Avenir-Black.woff2') format('woff2'),
+        url('../fonts/custom/Avenir-Black.woff') format('woff'),
+        url('../fonts/custom/Avenir-Black.ttf') format('truetype'),
+        url('../fonts/custom/Avenir-Black.svg#Avenir-Black') format('svg');
+    font-weight: 900;
     font-style: normal;
 }
 
@@ -131,6 +144,7 @@ ul.navbar-nav a:hover {
 
 .about-component-wrapper .about-component .description-wrapper h1.heading-1 {
     text-transform: uppercase;
+    font-family: 'Avenir-Black';
 }
 
 .about-component-wrapper .about-component .description-wrapper p {
@@ -240,6 +254,38 @@ ul.navbar-nav a:hover {
 
 
 
+.owl-theme .owl-nav [class*='owl-'] {
+    color: #FFF;
+    font-size: 20px;
+    margin: auto;
+    padding: 4px 7px;
+    background: #D6D6D6;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 0;
+    position: absolute;
+    opacity: 0.6;
+}
+.owl-next {
+    right: 0;
+    top: 40%;
+}
+.owl-prev {
+    left: 0;
+    top: 40%;
+}
+.owl-theme .owl-nav [class*='owl-']:hover {
+    background: #f6a1b5;
+    color: #FFF;
+    text-decoration: none;
+    opacity: 1;
+}
+.owl-theme .owl-nav [class*='owl-']:hover {
+    background: #f6a1b5;
+    color: #FFF;
+    text-decoration: none;
+    opacity: 1;
+}
 
 
 
