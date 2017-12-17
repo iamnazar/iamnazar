@@ -114,6 +114,47 @@ header.sticky {  box-shadow: 0px 0px 11px #b9b9b9; }
 ul.navbar-nav a:hover {
     color: #f6a1b5 !important;
 }
+
+/*Navbar services carousel*/
+.service-dropdown-menu .mobile-nav { display: none; }
+.navbar-nav .service-dropdown-menu {
+    width: 1300px;
+    /*display: block;*/
+    position: absolute;
+    left: 0;
+    margin-left: -140px;
+    padding: 20px 150px;
+}
+.service-dropdown-menu .owl-prev {
+    position: absolute;
+    left: -35px;
+}
+.service-dropdown-menu .owl-next {
+    position: absolute;
+} 
+.service-dropdown-menu .service {
+    float: left;
+    width: 200px;
+    display: inline-block;
+    clear: none;
+    font-size: 1.2em;
+    font-style: italic;
+}
+.service-dropdown-menu .service img{
+    width: 100%
+}
+.service-dropdown-menu .service span{
+    float: left;
+    width: 70%;
+    text-transform: initial;
+    display: inline-block;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin: 10px 0;
+}
+
+
+
 .carousel .carousel-control {
     background: none;
     opacity: .0;
@@ -326,7 +367,15 @@ ul.navbar-nav a:hover {
         width: 100%;
         padding: 0;
     }
-    .carousel .carousel-control { display: none; }
+    .carousel .carousel-control, .service-dropdown-menu .service, .service-dropdown-menu .owl-carousel { display: none; }
+    .navbar-nav .service-dropdown-menu  {
+            width: inherit;
+            position: relative;
+            left: 0;
+            margin-left: 0px;
+            padding: 10px 0;
+    }
+    .service-dropdown-menu .mobile-nav {display: block; }
     .row-third, .termscondition{ text-align: center; float: none; margin: 10px 0; }
     .footer-component .email-field { float: none }
     .lg-toolbar { margin: 30px 0 0; }

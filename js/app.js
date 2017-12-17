@@ -7,7 +7,7 @@ $(document).ready(function () {
 
     $('.owl-carousel').owlCarousel({
         stagePadding: 0,
-        loop:true,
+        loop:false,
         margin:20,
         animateIn:true,
         animateOut:true,
@@ -26,6 +26,18 @@ $(document).ready(function () {
                 items:4
             }
         }
+    });
+
+    
+    $('.service-carousel').owlCarousel({
+        loop:false,
+        margin:20,
+        animateIn:true,
+        animateOut:true,
+        lazyLoad: true,
+        nav:true,
+        navText: ["<span class='glyphicon glyphicon-chevron-left'></span>","<span class='glyphicon glyphicon-chevron-right'></span>"],
+        dots: false
     });
 });
 
