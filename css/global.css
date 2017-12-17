@@ -8,6 +8,9 @@ a:hover { color: #f6a2b6; text-decoration: none;}
 img {
     width: 100%;
 }
+.relative {
+    position: relative;
+}
 
 @font-face {
     font-family: 'Avenir';
@@ -59,6 +62,34 @@ body {
 .cta-transparent:hover {
     border-right: 2px solid #f6a1b5;
 }
+
+.shine:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.4);
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+    
+    
+}
+.shine:hover:after {
+    width: 120%;
+    background-color: rgba(255,255,255,0);
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+
 
 main section { margin: 20px 0; clear: both}
 main section .row { padding: 20px 0; box-sizing: border-box;}
@@ -213,7 +244,12 @@ ul.navbar-nav a:hover {
     width: auto;
     float: left;
     list-style: none;
-    margin: 0px 20px 0 0;}
+    margin: 0px 20px 0 0;
+}
+
+.thumbnails li a {
+    display: inline-block;
+}
 .featured-image {}
 
 .owl-carousel .item{
