@@ -65,7 +65,16 @@ main section .row { padding: 20px 0; box-sizing: border-box;}
 /*main section:hover .row{ box-shadow: 0px 0px 5px #888;}*/
 
 /********************HEADER STYLE********************/
-header.sticky {  box-shadow: 0px 0px 11px #b9b9b9; }
+header.sticky {  
+    box-shadow: 0px 0px 11px #b9b9b9;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    z-index: 9;
+    margin: 0;
+    padding: 0;
+    top: 0;
+}
 .header-top { background: #f2f6f5; height: 40px;}
 .header-top ul {display: inline;}
 .header-top ul li { display: inline-block; list-style: none; margin: 0 10px;}

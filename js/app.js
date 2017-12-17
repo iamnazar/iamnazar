@@ -3,7 +3,16 @@
 $(document).ready(function () {
     featuredThumb();
     
-    new WOW().init();
+    //new WOW().init();
+
+    $(window).scroll(function () {
+      if ( $(this).scrollTop() > 200 && !$('header').hasClass('sticky') ) {
+        $('header').addClass('sticky');
+        $('header').slideDown();
+       } else if ( $(this).scrollTop() <= 200 ) {
+        $('header').removeClass('sticky');
+      }
+    });
 
     $('.owl-carousel').owlCarousel({
         stagePadding: 0,
