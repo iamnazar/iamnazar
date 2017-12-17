@@ -4,7 +4,7 @@ $(document).ready(function () {
     featuredThumb();
     
     //new WOW().init();
-
+    bookAppointmentTabToggle();
     $(window).scroll(function () {
       if ( $(this).scrollTop() > 200 && !$('header').hasClass('sticky') ) {
         $('header').addClass('sticky');
@@ -57,5 +57,11 @@ function featuredThumb() {
         if(datahref != ""){
             $(this).closest('.featured-desc').next('.featured-image').find('.image-wrapper').attr('src', datahref);
         }
+    });
+}
+
+function bookAppointmentTabToggle () {
+    $('.book-appointment-tab').click (function (e) {
+        $(e.target).closest('.book-appointment-tab-wrap').next('.form-elements').slideToggle('slow');
     });
 }
