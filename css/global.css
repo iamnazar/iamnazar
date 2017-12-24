@@ -162,7 +162,14 @@ ul.navbar-nav a:hover {
 .dropdown-menu .owl-prev:hover, .dropdown-menu .owl-next:hover{ color:#f6a1b5; }
 .dropdown-menu .owl-prev.disabled, .dropdown-menu .owl-prev.disabled:hover,
 .dropdown-menu .owl-next.disabled, .dropdown-menu .owl-next.disabled:hover{ color: #dadada; }
-
+.dropdown-menu .pointer {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    z-index: 6;
+    margin: 0 0 0 25px;
+    top: -15px;
+}
 /*Navbar services carousel*/
 .service-dropdown-menu .mobile-nav { display: none; }
 .navbar-nav .service-dropdown-menu {
@@ -172,6 +179,10 @@ ul.navbar-nav a:hover {
     left: 0;
     margin-left: -140px;
     padding: 20px 150px;
+}
+.navbar-nav>li>.dropdown-menu {
+    margin-top: 20px;
+    border: 1.6px solid #989898;
 }
 .service-dropdown-menu .owl-prev {
     position: absolute;
