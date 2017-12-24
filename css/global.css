@@ -50,6 +50,7 @@ body {
     height: 100%;
     z-index: 9999;
     background: url(../images/Preloader_11.gif) center no-repeat #fff;
+    opacity: 0.9;
 }
 
 
