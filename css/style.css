@@ -428,7 +428,7 @@ a.btn_full_outline {
 .sticky ul#top_tools a,
 header#plain ul#top_links :hover a,
 header#plain ul#top_tools a {
-    color: #fff
+    color: #444
 }
 
 a.btn_full_outline:hover {
@@ -448,7 +448,7 @@ header {
 header#plain,
 header.sticky {
     padding-bottom: 0;
-    background-color: #3f4079;
+    background-color: #fff;
     padding: 0;
 }
 
@@ -477,12 +477,12 @@ header#plain #logo_home h1 a {
     background-position: left top;
     background-size: auto;
     text-indent: -9999px;
-    background-position-y: -15px;
+    background-position-y: 0px;
 }
 
 header.sticky #logo_home h1 a {
     height: 60px;
-    background-position-y: -17px;
+    background-position-y: 0px;
 }
 
 header.sticky #logo_home h1 {
