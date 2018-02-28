@@ -492,7 +492,7 @@ header.sticky #logo_home h1 {
 
 header#plain #logo_home h1 a,
 header.sticky #logo_home h1 a {
-    background-image: url(../img/logo.png)
+    background-image: url(../img/logo_sticky.png)
 }
 
 header.sticky#colored #logo_home h1 a {
