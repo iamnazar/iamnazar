@@ -1,5 +1,6 @@
 $(document).ready(function (e) {
     videoCarouselInit();
+    $( ".accordion" ).accordion();
 });
 
 function videoCarouselInit() {
