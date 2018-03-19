@@ -1158,12 +1158,10 @@ video {
 }
 
 #search_bar_container {
-    background: #333;
-    background-color: rgba(0, 0, 0, .4);
     padding: 15px 0;
     position: absolute;
     left: 0;
-    bottom: 0;
+    top: 5%;
     width: 100%
 }
 
@@ -5111,6 +5109,14 @@ a.primary-btn:hover { text-decoration: none; color: #fff; }
 .test-list li:hover { background: #f4f4f4; color: #fff; cursor: pointer; }
 .test-index { display: flex; flex-direction: row; flex-wrap: wrap; text-align: center; margin: 20px 0 0 0; }
 .test-index li{ list-style: none; width: 30%; margin: 10px 0; }
+ul.token-input-list-facebook {
+    margin: -5px 0 0 135px;
+    border: none;
+    width: 70%;
+ }
+ li.token-input-token-facebook {
+    padding: 8px 10px;
+ }
 
 @media only screen and (max-width: 768px) {
     .test-Detail-Heading { margin: 0; }
